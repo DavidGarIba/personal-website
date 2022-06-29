@@ -35,11 +35,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .bio, .skills, .portfolio, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.bio .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -261,20 +261,20 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
+.bio, .portfolio{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.teams .title::before{
+.bio .title::before,
+.portfolio .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
+.bio .title::after,
+.portfolio .title::after{
     background: #111;
     /* content: "what i provide"; */
 }
-.services .serv-content .card{
+.bio .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -283,34 +283,34 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content #family-card:hover{
+.bio .serv-content #family-card:hover{
     
     content: url("images/Family.jpg");
 }
 
-.services .serv-content #hobbies-card:hover{
+.bio .serv-content #hobbies-card:hover{
     content: url("images/hikingMain.jpg");
 }
 
-.services .serv-content #son-card:hover{
+.bio .serv-content #son-card:hover{
     content: url("images/RomeoGrown.jpg");
 }
 
-.services .serv-content .card .box{
+.bio .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.bio .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.bio .serv-content .card i{
     font-size: 50px;
     color: #0055b3;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.bio .serv-content .card:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.bio .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -395,10 +395,10 @@ section .title::after{
 }
 
 /* teams section styling */
-/* .teams .title::after{
+/* .portfolio .title::after{
     content: "who with me";
 } */
-.teams .carousel .card{
+.portfolio .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -406,25 +406,25 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.portfolio .carousel .card:hover{
     background: #0055b3;
 }
-.teams .carousel .card .box{
+.portfolio .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.portfolio .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.portfolio .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.portfolio .carousel .card img{
     height: 220px;
     width: 120px;
     object-fit: cover;
@@ -432,10 +432,10 @@ section .title::after{
     border: 5px solid #0055b3;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.portfolio .carousel .card:hover img{
     border-color: #fff;
 }
-.teams .carousel a:visited{
+.portfolio .carousel a:visited{
     color: #fff;
 }
 .owl-dots{
@@ -638,7 +638,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .bio .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -662,7 +662,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .bio .serv-content .card{
         width: 100%;
     }
 }
